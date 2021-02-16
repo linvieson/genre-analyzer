@@ -19,8 +19,10 @@ most successful to the least successful.
 [read_data.py](https://github.com/linvieson/genre-analyzer/blob/main/main/read_data.py) - 
 module that contains functions that read data from csv and tsv database files; creates a new 
 database (to impove the performance of the program), which is used in the main module.
+
 [termcolor.py](https://github.com/linvieson/genre-analyzer/blob/main/main/termcolor.py) - 
 external module, that is used to print formatted and colored text.
+
 [main.py](https://github.com/linvieson/genre-analyzer/blob/main/main/main.py) - main module, 
 in which the program is realized. Gets input from user, checks if the input is correct, 
 analyzes data, performs calculations and outputs the requeted infromation.
@@ -36,19 +38,17 @@ timeprint() function, that outputs the text gradually, with delay in 0.03 second
 
 
 ## Databases
-1) British Library Catalogue Dataset (titles.csv file). Data with all works of E. M. Forster 
+1) British Library Catalogue Dataset ([titles.csv](https://www.bl.uk/bibliographic/downloads/EMForsterResearcherFormat_202001_csv.zip) file). Data with all works of E. M. Forster 
 is used.
-2) IMDb Datasets (title.basics.tsv and title.ratings.tsv files). Data with names of films, 
-their code (in tconst), genre and average rating is used.
+2) IMDb Datasets ([title.basics.tsv](https://datasets.imdbws.com/title.basics.tsv.gz) 
+and [title.ratings.tsv](https://datasets.imdbws.com/title.ratings.tsv.gz) files). 
+Data with names of films, their code (in tconst), genre and average rating is used.
 3) Own created dataset (filtered_data.csv). Contains sorted data from databases 1) and 2). 
 Created for better visualisation and more accurate data analysis. Conists of data about 
 book names, film names (if such exist), book genres, film genres, average filmratings. 
 
-All data is in free access and can be downloaded by the following links:
+All data is in free access and can be downloaded by links.
 
-[titles.csv](https://www.bl.uk/bibliographic/downloads/EMForsterResearcherFormat_202001_csv.zip)
-[title.basics.tsv](https://datasets.imdbws.com/title.basics.tsv.gz)
-[title.ratings.tsv](https://datasets.imdbws.com/title.ratings.tsv.gz)
 filtered_data_csv is created by calling the function write_to_file(df) 
 in [read_data.py](https://github.com/linvieson/genre-analyzer/blob/main/main/read_data.py) module.
 
